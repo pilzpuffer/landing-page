@@ -1,0 +1,7 @@
+body {
+    background: rgb(177, 177, 206);
+}
+
+.logo {
+    filter: invert(1);
+}
