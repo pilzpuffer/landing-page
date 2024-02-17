@@ -1,7 +1,87 @@
 body {
-    background: rgb(177, 177, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: rgb(142, 182, 205);
+    padding: 0 75px;
 }
 
 .logo {
     filter: invert(1);
+    height: 30px;
+    width: auto;
+    flex-shrink: 0;
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content button {
+    cursor: url(./images/cursor.png), auto;
+    width: fit-content;
+}
+
+.header-cat {
+    height: 241px;
+    width: auto;
+}
+
+.gallery-title {
+    padding: 30px 75px;
+    text-align: center;
+}
+
+.gallery {
+    width: 213px; 
+    height: 241px;
+}
+
+.full-gallery {
+    display: flex;
+    padding: 0 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.gallery-image p {
+    width: 230px;
+}
+
