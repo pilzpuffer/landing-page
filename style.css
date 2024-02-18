@@ -6,6 +6,13 @@ body {
     flex-direction: column;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
 .header,
 .footer {
     background: rgb(89, 93, 136);
@@ -67,13 +74,14 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     width: 600px;
-    gap: 10px;
 }
 
 .header-button,
 .action-button {
     cursor: url(./images/cursor.png), auto;
+    min-height: auto;
     width: fit-content;
+    min-width: 194px;
     padding: 10px 20px;
     font-size: 17px;
     font-weight: bold;
@@ -82,10 +90,10 @@ ul {
     color:white;
     border-color: white;
     border-width: 3px;
+    flex-shrink: 0;
 }
 
 .header-button {
-    margin-top: 10px;
     background-color: rgb(64, 67, 99);
 }
 
@@ -125,9 +133,17 @@ ul {
 
 .full-gallery {
     display: flex;
-    padding: 0 30px;
+    padding: 0 20px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.column-1 {
+    display: flex;
+}
+
+.column-2 {
+    display: flex;
 }
 
 .gallery-image {
@@ -146,6 +162,7 @@ ul {
     justify-content: center;
     gap: 35px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .review {
@@ -183,9 +200,11 @@ ul {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 200, 215);
+    width: 850px;
     margin: 40px 100px;
     padding: 30px 50px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .action-title {
@@ -193,10 +212,8 @@ ul {
     font-size: 20px;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
+.action-text {
+    flex-shrink: 2;
 }
 
 .footer {
@@ -208,4 +225,40 @@ ul {
     height: 45px;   
     color:white;
     font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .column-1,
+    .column-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1094px) {
+    .action {
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+
+    .action-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 950px) {
+    .header-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-button {
+        order: 2;
+    }
 }
