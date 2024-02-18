@@ -8,7 +8,8 @@ body {
 
 .header {
     background: rgb(142, 182, 205);
-    padding: 0 75px;
+    padding: 0 100px 30px 100px;
+    color:white;
 }
 
 .logo {
@@ -18,15 +19,21 @@ body {
     flex-shrink: 0;
 }
 
+.brand-name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .left-side {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .menu {
@@ -37,21 +44,46 @@ body {
 ul {
     list-style: none;
     padding: 0;
+    font-size: 18px;
 }
 
 .header-content {
     display: flex;
     justify-content: center;
+    gap: 10px
+}
+
+.header-title {
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .header-left {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 600px;
+    gap: 10px;
 }
 
-button {
+.header-button,
+.action-button {
     cursor: url(./images/cursor.png), auto;
     width: fit-content;
+    background-color: rgb(253, 218, 227);
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+.header-button {
+    border-color: rgb(142, 182, 205);
+}
+
+.action-button {
+    border-color: white;
+    border-width: 3px;
 }
 
 .header-cat {
@@ -62,6 +94,8 @@ button {
 .gallery-title {
     padding: 30px 75px;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .gallery {
@@ -116,7 +150,7 @@ button {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(253, 218, 227);
-    margin: 50px 75px;
+    margin: 50px 100px;
     padding: 30px 50px;
 }
 
@@ -133,5 +167,6 @@ button {
     align-items: center;
     justify-content: center;
     background: rgb(142, 182, 205);
-    height: 55px;   
+    height: 45px;   
+    color:white;
 }
