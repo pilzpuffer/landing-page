@@ -85,3 +85,30 @@ ul {
     width: 230px;
 }
 
+.review-section {
+    background: rgb(221, 233, 240);
+    padding: 30px 75px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review p {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.customer {
+    font-weight: bold;
+    text-align: end;
+}
+
+
