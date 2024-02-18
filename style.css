@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Noto Color Emoji";
+    src: url(./fonts/NotoColorEmoji.ttf) format("truetype");
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -227,6 +232,11 @@ ul {
     font-weight: bold;
 }
 
+.emoji,
+.rating {
+    font-family: "Noto Color Emoji";
+}
+
 @media (max-width: 500px) {
     .column-1,
     .column-2 {
@@ -256,9 +266,5 @@ ul {
 
     .header-title {
         text-align: center;
-    }
-
-    .header-button {
-        order: 2;
     }
 }
