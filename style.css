@@ -6,8 +6,12 @@ body {
     flex-direction: column;
 }
 
+.header,
+.footer {
+    background: rgb(89, 93, 136);
+}
+
 .header {
-    background: rgb(142, 182, 205);
     padding: 0 100px 30px 100px;
     color:white;
 }
@@ -70,20 +74,36 @@ ul {
 .action-button {
     cursor: url(./images/cursor.png), auto;
     width: fit-content;
-    background-color: rgb(253, 218, 227);
-    padding: 10px 30px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
     border-radius: 25px;
     border-style: solid;
+    color:white;
+    border-color: white;
+    border-width: 3px;
 }
 
 .header-button {
-    border-color: rgb(142, 182, 205);
+    margin-top: 10px;
+    background-color: rgb(64, 67, 99);
+}
+
+.header-button:hover {
+    border-color: rgb(64, 67, 99);
+    color: rgb(64, 67, 99);
+    background-color: white;
 }
 
 .action-button {
     border-color: white;
-    border-width: 3px;
+    background-color: rgb(255, 153, 172);
+}
+
+.action-button:hover {
+    border-color: rgb(255, 153, 172);
+    color: rgb(255, 153, 172);
+    background-color: white;
 }
 
 .header-cat {
@@ -149,7 +169,7 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(253, 218, 227);
+    background-color: rgb(255, 200, 215);
     margin: 50px 100px;
     padding: 30px 50px;
 }
@@ -166,7 +186,6 @@ ul {
     flex-grow: 0;
     align-items: center;
     justify-content: center;
-    background: rgb(142, 182, 205);
     height: 45px;   
     color:white;
 }
