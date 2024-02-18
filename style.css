@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .content {
@@ -24,7 +25,7 @@ body {
 }
 
 .header {
-    padding: 0 100px 30px 100px;
+    padding-bottom:30px;
     color:white;
 }
 
@@ -44,6 +45,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
+    width: 80%;
+    margin: 0 10%;
 }
 
 .left-side {
@@ -224,7 +227,8 @@ ul {
 .footer {
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
+    flex-shrink: 0;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
     height: 45px;   
@@ -266,5 +270,20 @@ ul {
 
     .header-title {
         text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1550px){
+    .navigation {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .navigation {
+        width: 50%;
+        margin: 0 25%;
     }
 }
