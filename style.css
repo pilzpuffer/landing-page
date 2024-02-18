@@ -144,12 +144,12 @@ ul {
     padding: 30px 75px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     flex-wrap: wrap;
 }
 
 .review {
-    width: 450px;
+    width: 470px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,8 +161,21 @@ ul {
 }
 
 .customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rating {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.title {
     font-weight: bold;
-    text-align: end;
+    font-size: 17px;
 }
 
 .action {
@@ -172,6 +185,12 @@ ul {
     background-color: rgb(255, 200, 215);
     margin: 50px 100px;
     padding: 30px 50px;
+    border-radius: 20px;
+}
+
+.action-title {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .content {
