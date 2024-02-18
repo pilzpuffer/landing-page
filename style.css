@@ -49,7 +49,7 @@ ul {
     flex-direction: column;
 }
 
-.header-content button {
+button {
     cursor: url(./images/cursor.png), auto;
     width: fit-content;
 }
@@ -109,6 +109,15 @@ ul {
 .customer {
     font-weight: bold;
     text-align: end;
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(253, 218, 227);
+    margin: 50px 75px;
+    padding: 30px 50px;
 }
 
 
