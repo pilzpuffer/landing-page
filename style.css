@@ -125,7 +125,7 @@ ul {
 
 .full-gallery {
     display: flex;
-    padding: 0 75px;
+    padding: 0 30px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -188,4 +188,5 @@ ul {
     justify-content: center;
     height: 45px;   
     color:white;
+    font-weight: bold;
 }
